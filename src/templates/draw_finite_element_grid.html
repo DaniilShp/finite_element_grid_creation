@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>finite element grid creation</title>
+    <link href = "{{url_for('static', filename = 'style.css')}}"
+          rel = "stylesheet" type = "text/css">
+</head>
+<body>
+    <header>
+        <center><h1 style="align: center">Построение конечно-элементной сетки</h1></center>
+    </header><br>
+    {% if method_GET %}
+    <form action = "" method = "POST">
+        <center><input type = "submit" value = "Построить"></center>
+    </form>
+    {% endif %}
+    {% if not method_GET %}
+        <center>
+            <b>graph</b><br>
+            <img src="data:image/png;base64,{{plot}}"><br>
+            <a style="text-decoration: none; color: black; font-size: 12pt" href="{{url_for('draw_finite_element_grid')}}">
+                <button>
+                    Return back
+                </button>
+            </a><br><br>
+        </center>>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,11 @@
+body { background: #fffaf0; }
+header { background: #808080; font-size: 14pt; padding: 10px;}
+
+input {
+    font-size   : 12pt;
+    background      : #909090;
+    color           : black;
+    width           : 180px;
+    height          : 30px;
+    border-radius   : 8px
+}

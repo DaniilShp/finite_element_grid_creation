@@ -1,0 +1,1 @@
+SELECT id, x, y from nodes
